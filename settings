@@ -1,5 +1,6 @@
 
 LOCAL_PATH="~/Music/Collection"
+LOCAL_AMAZONMP3_PATH="$LOCAL_PATH/Amazon MP3"
 REMOTE_PATH="/media/STREAK"
 
 # the arguments used when running rsync.
