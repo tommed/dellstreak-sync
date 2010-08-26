@@ -1,3 +1,17 @@
 
 LOCAL_PATH="~/Music/Collection"
 REMOTE_PATH="/media/STREAK"
+
+# the arguments used when running rsync.
+RSYNC_ARGS="-ruv"
+#RSYNC_ARGS="-ruvn" # preview changes
+
+# after running rsync, if this variable
+# has the value 'yes', the amazonmp3 folder
+# on the streak will be emptied.
+CLEAR_AMAZONMP3="yes"
+
+# include Ubuntu One purchases?
+# if yes, rsyncs your ~/.local/ubuntuone/Purchased... folder
+# with the streak
+INCLUDE_UBUNTU_ONE="yes"

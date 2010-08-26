@@ -8,6 +8,10 @@ if [ ! -d "$REMOTE_PATH" ]; then
 fi
 
 echo "pulling purchases from streak to computer..."
-rsync -ruv $REMOTE_PATH/amazonmp3/ $LOCAL_PATH/Amazon\ MP3/
-rm -rf $REMOTE_PATH/amazonmp3/*
+rsync $RSYNC_ARGS "$REMOTE_PATH/amazonmp3/" "$LOCAL_PATH/Amazon\ MP3/"
+
+if [ "$CLEAR_AMAZONMP3" = "yes" ]; then
+	rm -rf $REMOTE_PATH/amazonmp3/*
+fi
+
 echo "done"
