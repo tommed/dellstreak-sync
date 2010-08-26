@@ -18,4 +18,4 @@ h2. notes
 
 It uses rsync (so make sure you have it installed) and assumes your
 music is stored in: ~/Music/Collection. If this is not the case, just
-edit the scripts and change it manually.
+edit the scripts and change it manually in the ./settings bash file.
